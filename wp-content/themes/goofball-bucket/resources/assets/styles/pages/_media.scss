@@ -1,0 +1,41 @@
+.template-media {
+  .slick-slider {
+    .slick-slide {
+      outline: 0;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+      font-size: 0;
+      width: 50px;
+      background-color: rgba(0, 0, 0, 0);
+      border: 0;
+      outline: 0;
+
+      &.slick-next {
+        right: 0;
+
+        &::before {
+          content: '\f054';
+        }
+      }
+
+      &.slick-prev {
+        &::before {
+          content: '\f053';
+        }
+      }
+
+      &::before,
+      &::after {
+        font-family: 'FontAwesome';
+        z-index: 101;
+        font-size: 2rem;
+        color: white;
+      }
+    }
+  }
+}
